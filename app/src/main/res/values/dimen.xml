@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pading_movie_detail">8dp</dimen>
+    <dimen name="movie_list_height">0dp</dimen>
+    <dimen name="image_hight">85dp</dimen>
+    <dimen name="image_width">130dp</dimen>
+
+
+</resources>

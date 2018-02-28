@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="movieEventHandler"
+            type="com.androidTestMid.movies.ui.MovieEventHandler" />
+
+        <variable
+            name="movieListViewModel"
+            type="com.androidTestMid.movies.viewmodel.MovieListViewModel" />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="@dimen/movie_list_height"
+            android:layout_height="@dimen/movie_list_height"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:movie_event_handler="@{movieEventHandler}"
+                app:movie_fetcher="@{movieListViewModel.movieFetcher}"
+                app:layoutManager="LinearLayoutManager"
+                android:background="@color/white"
+                app:sorted_type="@{movieListViewModel.sortedType}">
+                ></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu">
+    <group android:id="@+id/group_menu">
+
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_sortByTitle"
+        android:title="@string/sortByTitle"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_sortByYear"
+        android:title="@string/sortByYear"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_sortByDefault"
+        android:title="@string/sortByDefault"
+        app:showAsAction="never"/>
+    </group>
+
+</menu>
